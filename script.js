@@ -8,17 +8,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function handleScroll() {
     if (window.scrollY > 10) {
-      navbar.classList.add(
-        "bg-white/90",
-        "backdrop-blur-md",
-        "shadow-sm",
-        "py-3"
-      );
+      navbar.classList.add("bg-white", "backdrop-blur-md", "shadow-sm", "py-3");
       navbar.classList.remove("bg-transparent", "py-5");
     } else {
       navbar.classList.add("bg-transparent", "py-5");
       navbar.classList.remove(
-        "bg-white/90",
+        "bg-white",
         "backdrop-blur-md",
         "shadow-sm",
         "py-3"
